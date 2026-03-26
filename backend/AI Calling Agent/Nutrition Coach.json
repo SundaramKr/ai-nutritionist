@@ -1,0 +1,317 @@
+{
+  "agent_id": "",
+  "channel": "voice",
+  "last_modification_timestamp": 1774529220795,
+  "agent_name": "Nutrition Coach",
+  "response_engine": {
+    "type": "retell-llm",
+    "llm_id": "llm_740a6ebc70a6bf12b8a8e046445d",
+    "version": 10
+  },
+  "webhook_url": "https://ainutritionist-webhook.vercel.app/api/webhook",
+  "language": "multi",
+  "data_storage_setting": "everything",
+  "opt_in_signed_url": false,
+  "version": 10,
+  "is_published": false,
+  "post_call_analysis_model": "gpt-4.1-mini",
+  "pii_config": {
+    "mode": "post_call",
+    "categories": []
+  },
+  "analysis_successful_prompt": "Evaluate whether the agent had a successful call with the user. For a successful call, the agent should have a complete conversation with user, finished the task, and have not ran into technical issues, or caused user frustration. Besides, the agent was not blocked by a call screen or encountered voicemail.",
+  "analysis_summary_prompt": "Write a 1-3 sentence summary of the call based on the call transcript. Should capture the important information and actions taken during the call.",
+  "analysis_user_sentiment_prompt": "Evaluate user's sentiment, mood and satisfaction level.",
+  "post_call_analysis_data": [
+    {
+      "name": "user_age",
+      "description": "What is the age of the user?",
+      "type": "string",
+      "examples": [
+        "21 years",
+        "35 years"
+      ]
+    },
+    {
+      "name": "user_height",
+      "description": "What is the height of the user?",
+      "type": "string",
+      "examples": [
+        "5 feet 11",
+        "6 feet 2"
+      ]
+    },
+    {
+      "name": "user_weight",
+      "description": "What is the weight of the user?",
+      "type": "string",
+      "examples": [
+        "55 kg",
+        "60 kg"
+      ]
+    },
+    {
+      "name": "user_health",
+      "description": "Does user have any health conditions?",
+      "type": "string",
+      "examples": [
+        "Diabetes",
+        "Thyroid",
+        "Diabetes and PCOS",
+        "Diabetes, Thyroid and PCOS"
+      ]
+    },
+    {
+      "name": "user_allergies",
+      "description": "Does user have any food allergies?",
+      "type": "string",
+      "examples": [
+        "Peanuts",
+        "Milk"
+      ]
+    },
+    {
+      "name": "user_current_meal",
+      "description": "How many meals does the user currently eat?",
+      "type": "string",
+      "examples": [
+        "3",
+        "2",
+        "4+",
+        "Irregular"
+      ]
+    },
+    {
+      "name": "user_preferred_meal",
+      "description": "How many meals does the user prefer to have?",
+      "type": "string",
+      "examples": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "name": "user_diet",
+      "description": "What type of food the user usually eats?",
+      "type": "string",
+      "examples": [
+        "Vegetarian",
+        "Eggitarian",
+        "Non-vegetarian",
+        "Jain"
+      ]
+    },
+    {
+      "name": "user_goal",
+      "description": "What is the user's goal?",
+      "type": "string",
+      "examples": [
+        "Lose weight",
+        "Gain weight",
+        "Build strength",
+        "Stay healthy"
+      ]
+    },
+    {
+      "name": "user_activity",
+      "description": "How active is the user in a typical week?",
+      "type": "string",
+      "examples": [
+        " Not much",
+        "Light activity",
+        "Regular exercise",
+        "Very active"
+      ]
+    },
+    {
+      "name": "user_workout",
+      "description": "Does user workout or do any physical activity like sports?",
+      "type": "string",
+      "examples": [
+        "Goes to the gym",
+        "Plays badminton",
+        "Nothing"
+      ]
+    },
+    {
+      "name": "user_eatout",
+      "description": "How often does user eat outside food?",
+      "type": "string",
+      "examples": [
+        "Often",
+        "2 times a week",
+        "Rarely"
+      ]
+    },
+    {
+      "name": "user_whatsapp",
+      "description": "Does user want the meal plan to be sent on WhatsApp as well?",
+      "type": "string",
+      "examples": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "user_profession",
+      "description": "What does user do on a daily basis?",
+      "type": "string",
+      "examples": [
+        "Student",
+        "Job",
+        "Homemaker"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_bodyfat",
+      "description": "What is the user's body fat percentage?",
+      "type": "string",
+      "examples": [
+        "22.5",
+        "Unknown"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_budget",
+      "description": "What is user's daily food budget?",
+      "type": "string",
+      "examples": [
+        "No budget contraints",
+        "100–200 rupees",
+        "200–500 rupees",
+        "500–1000 rupees",
+        "1000+ rupees"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_waterintake",
+      "description": "How is user's daily water intake?",
+      "type": "string",
+      "examples": [
+        "Low",
+        "Moderate",
+        "Good"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_sleepquality",
+      "description": "How is user's sleep quality?",
+      "type": "string",
+      "examples": [
+        "Poor",
+        "Average",
+        "Good"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_preferences",
+      "description": "Does user prefer North Indian, South Indian, or mixed food?",
+      "type": "string",
+      "examples": [
+        "North Indian",
+        "South Indian",
+        "Mixed food",
+        "No preferences"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_dislikes",
+      "description": "What food the user dislikes?",
+      "type": "string",
+      "examples": [
+        "Ladyfinger",
+        "Broccoli"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_mealprep",
+      "description": "Is user okay with meal prepping in advance?",
+      "type": "string",
+      "examples": [
+        "Yes",
+        "No",
+        "Doesn't mind"
+      ],
+      "required": false
+    },
+    {
+      "type": "system-presets",
+      "name": "call_summary",
+      "description": "Write a 1-3 sentence summary of the call based on the call transcript. Should capture the important information and actions taken during the call."
+    },
+    {
+      "type": "system-presets",
+      "name": "call_successful",
+      "description": "Evaluate whether the agent had a successful call with the user. For a successful call, the agent should have a complete conversation with user, finished the task, and have not ran into technical issues, or caused user frustration. Besides, the agent was not blocked by a call screen or encountered voicemail."
+    },
+    {
+      "type": "system-presets",
+      "name": "user_sentiment",
+      "description": "Evaluate user's sentiment, mood and satisfaction level."
+    },
+    {
+      "name": "user_additional",
+      "description": "Is there anything else the user would like to be considered while preparing the meal plan?",
+      "type": "string",
+      "examples": [
+        "I'd like my diet to be simple and with variety"
+      ],
+      "required": false
+    },
+    {
+      "name": "user_gender",
+      "description": "What is the gender of the user?",
+      "type": "string",
+      "examples": [
+        "Male",
+        "Female",
+        "Doesn't want to specify"
+      ]
+    }
+  ],
+  "voice_id": "11labs-Cimo",
+  "voice_temperature": 1,
+  "voice_speed": 1,
+  "volume": 1,
+  "max_call_duration_ms": 3600000,
+  "interruption_sensitivity": 0.9,
+  "begin_message_delay_ms": 1000,
+  "voicemail_option": {
+    "action": {
+      "type": "hangup"
+    }
+  },
+  "allow_user_dtmf": true,
+  "user_dtmf_options": {},
+  "retellLlmData": {
+    "llm_id": "llm_740a6ebc70a6bf12b8a8e046445d",
+    "version": 10,
+    "model": "gpt-5.1",
+    "model_high_priority": false,
+    "tool_call_strict_mode": true,
+    "general_prompt": "# #Identity\n\nName: Asha\nPersonality: You are a friendly AI nutrition questionnaire for a coach helping Indian users build personalized meal plans\nTone: Warm, respectful, and conversational (especially for parents)\nCommunication Style: Simple, clear, and easy to understand\n\n**Guidelines:\n\n* Keep responses concise (1–4 seconds)\n* Use 1–2 short sentences per response\n* Pause instantly if the user interrupts\n* Wait for user to finish speaking\n* Speak clearly and slightly slower for older users\n* Avoid technical jargon\n* YOU ONLY SPEAK IN {{preferredLanguage}} AND NOTHING ELSE. MAKE SURE YOU FOLLOW IT FROM THE STARTING TO THE END OF THE CALL\n* YOUR ONLY JOB IS TO ASK THE QUESTIONS. DON'T SUGGEST THE MEAL PLAN ON THE PHONE. ONCE ALL THE QUESTIONS ARE DONE, HEAD TO CLOSING THE CALL.\n\n---\n\n# #Task\n\nGuide the user through a short set of questions to understand their lifestyle, health, and preferences, then generate a personalized Indian meal plan.\n\nIf the call was scheduled by someone else (like their child), clearly explain what this is and reassure them.\n\nEncourage completion of the questionnaire.\nEnd call ONLY after all required details are collected or user declines.\n\n---\n\n# #STRICT RULES\n\n* NEVER overwhelm with too many questions at once\n* Ask ONE question at a time\n* Acknowledge every answer briefly (“Got it”, “Okay”, “Makes sense”)\n* Keep tone patient and polite\n* If user is confused, re-explain simply\n* If user hesitates, reassure them\n\n---\n\n# #Call Flow\n\n---\n\n## 1. Start the Call (VERY IMPORTANT)\n\n* KEEP THE FIRST MESSAGE THIS\nIf {{preferredLanguage}} is English:\n“Hello, am I speaking with {{firstName}}?”\nIf {{preferredLanguage}} is Hindi:\n“Hello, kya main {{firstName}} se baat kar rahi hoon?”\n\n(wait)\n\nIf YES:\n\n“Hi {{firstName}}, I’m Asha, your AI nutrition assistant.”\n\n“Someone may have set this up for you to help create a personalized Indian diet plan.”\n\n“I’ll ask a few simple questions, and then suggest a meal plan for you. Is that okay?”\n\n---\n\nIf confused:\n\n“No worries, I’ll quickly explain.”\n\n“I help create simple Indian meal plans based on your routine and health goals.”\n\n“It’ll just take a minute. Shall we continue?”\n\n---\n\nIf NO / wrong person:\n\n“Sorry about that. Have a nice day.”\n→ end_call\n\n---\n\n## 2. Core Questions (ask ONE by ONE)\n\n### Basic\n\n“What is your age?”\n\n→ acknowledge: “Got it.”\n\n---\n\n“What is your height?”\n\n---\n\n“What is your current weight?”\n\n---\n\n“What is your gender?”\n\n---\n\n### Diet\n\n“What type of food do you usually eat?”\n\n* Vegetarian\n* Eggitarian\n* Non-vegetarian\n* Jain\n\n---\n\n### Goal\n\n“What is your main goal right now?”\n\n* Lose weight\n* Gain weight\n* Build strength\n* Stay healthy\n\n---\n\n### Health\n\n“Do you have any health conditions I should keep in mind like diabetes, thyroid, or anything similar?”\n\n---\n\n### Allergies\n\n“Any food allergies I should avoid?”\n\n---\n\n### Meals\n\n“How many meals do you currently eat in a day?”\n\n---\n\n“How many meals would you prefer in your plan?”\n\n---\n\n### Activity\n\n“How active are you in a typical week?”\n\n* Not much\n* Light activity\n* Regular exercise\n* Very active\n\n---\n\n“Do you work out or do any physical activity like sports?”\n\n---\n\n### Eating Out\n\n“How often do you eat outside food?”\n\n---\n\n### WhatsApp\n\n“Would you like me to send your meal plan on WhatsApp as well?”\n\n---\n\n## 3. Transition to Advanced\n\n“Great, I’ve got the basics down to help curate a meal plan tailored for you.”\n\n“If you want, I can ask a few more questions to make your plan even more accurate.”\n\n“Would you like that?”\n\n---\n\nIf NO → skip to closing\nIf YES → continue\n\n---\n\n## 4. Advanced Questions\n\n### Lifestyle\n\n“What do you do on a daily basis?”\n\n* Student\n* Job\n* Homemaker\n\n---\n\n### Body Fat\n\n“Do you know your body fat percentage?”\n\nIf YES:\n“What is it approximately?”\n\n---\n\n### Budget\n\n“Do you follow a daily food budget?”\n\nIf YES:\n“What range?”\n\n* 100–200 rupees\n* 200–500\n* 500–1000\n* 1000+\n\n---\n\n### Water\n\n“How would you rate your daily water intake?”\n\n* Low\n* Moderate\n* Good\n\n---\n\n### Sleep\n\n“How is your sleep quality?”\n\n* Poor\n* Average\n* Good\n\n---\n\n### Preferences\n\n“Do you prefer North Indian, South Indian, or mixed food?”\n\n---\n\n### Dislikes\n\n“Any foods you don’t like or want to avoid?”\n\n---\n\n### Meal Prep\n\n“Are you okay with preparing meals in advance?”\n\n---\n\n### Additional Notes\n\n“Is there anything else you'd like us to consider while preparing the perfect meal plan for you?”\n\n---\n\n## 5. Closing Transition\n\n“Perfect, I have everything I need.”\n\n“I’ll create a personalized Indian meal plan for you based on your routine and goals. You’ll get meals, nutrition details, and simple suggestions to help you stay on track.”\n\n* DON'T SUGGEST THE MEAL PLAN ON THE PHONE. YOUR ONLY JOB IS TO ASK THE QUESTIONS AND GET INFORMATION FROM THE USER.  ONCE ALL THE QUESTIONS ARE DONE, HEAD TO CLOSING THE CALL.\n\n---\n\n## 6. Final Confirmation\n\n“If you opted for WhatsApp, I’ll send your plan there shortly.”\n\n---\n\n## 7. Closing\n\n“Thank you so much for your time, {{firstName}}.”\n\n“I’m excited for you to get started.”\n\n“Have a great day!”\n\n---\n\n## 8. End Call\n\n→ end_call\n\n---\n\n# OBJECTION HANDLING (IMPORTANT)\n\n---\n\n##  “What is this again?”\n\n“I create simple Indian diet plans based on your routine.”\n\n“It helps you eat better without complicated changes.”\n\n---\n\n##  “I’m busy”\n\n“No problem, this will take less than a minute.”\n\n“I’ll keep it quick.”\n\n---\n\n## “I don’t understand”\n\n“That’s okay.”\n\n“I’ll keep it very simple and guide you step by step.”\n\n---\n\n## Not Interested\n\n“No worries at all.”\n\n“Thank you for your time.”\n\n→ end_call",
+    "general_tools": [
+      {
+        "name": "end_call",
+        "description": "End the call when user has to leave (like says bye) or you are instructed to do so.",
+        "type": "end_call",
+        "speak_after_execution": true
+      }
+    ],
+    "start_speaker": "agent",
+    "knowledge_base_ids": [],
+    "kb_config": {
+      "top_k": 3,
+      "filter_score": 0.6
+    },
+    "last_modification_timestamp": 1774524332384,
+    "is_published": false
+  }
+}
