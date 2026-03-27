@@ -1,0 +1,189 @@
+ESSENTIAL QUESTIONS:
+**1. What is your age?**
+
+* Input: Number (years)
+
+**2. What is your height?**
+
+* Input: cm / feet+inches
+
+**3. What is your current weight?**
+
+* Input: kg
+
+---
+
+**4. What type of diet do you follow?**
+
+* Vegetarian
+* Eggitarian
+* Non-Vegetarian
+* Jain
+
+---
+
+**5. What is your primary goal?**
+
+* Lose weight
+* Gain weight
+* Build muscle
+* Improve overall fitness
+
+---
+
+**6. Do you have any food allergies?**
+
+* None
+* Nuts
+* Dairy
+* Gluten
+* Other (text input)
+
+---
+
+**7. Do you have any medical conditions we should consider?** *(Select all that apply)*
+
+* None
+* Diabetes
+* Thyroid
+* PCOS
+* Hypertension
+* Lactose intolerance
+* Pregnancy
+* Other (text input)
+
+---
+
+**8. How many meals do you currently eat in a day?**
+
+* 2 meals
+* 3 meals
+* 4+ meals
+* Irregular
+
+---
+
+**9. How many meals would you prefer in your plan?**
+
+* 2 meals
+* 3 meals
+* 4 meals
+* 5+ meals
+
+---
+
+**10. How often do you eat outside food?**
+
+* Rarely
+* 1–2 times/week
+* 3–5 times/week
+* Almost daily
+
+---
+
+**11. What is your daily activity level?**
+
+* Sedentary (little to no exercise)
+* Lightly active (1–2 days/week)
+* Moderately active (3–5 days/week)
+* Very active (6–7 days/week)
+
+---
+
+**12. Do you currently work out?**
+
+* No
+* Yes – Gym (strength training)
+* Yes – Cardio (running, cycling, etc.)
+* Yes – Sports / Mixed
+
+---
+
+**13. Would you like to receive your meal plan and daily updates on WhatsApp?**
+
+* Yes
+* No
+
+---
+
+# 🔸 TRANSITION (IMPORTANT UX TOUCH)
+
+**“Would you like to further customize your plan for more accurate results?”**
+
+* Yes (Recommended)
+* No (Generate plan now)
+
+---
+
+**14. What best describes your profession?**
+
+* Student
+* Working professional
+* Homemaker
+* Other
+
+---
+
+**15. Do you know your body fat percentage?**
+
+* No
+* Yes → (Input %)
+
+---
+
+**16. Do you have a daily budget for meals?**
+
+* No constraint
+* Yes
+
+*(If yes →)*
+
+* ₹100–200
+* ₹200–500
+* ₹500–1000
+* ₹1000+
+
+---
+
+**17. How would you rate your daily water intake?**
+
+* Low
+* Moderate
+* High
+
+---
+
+**18. How would you rate your sleep quality?**
+
+* Poor
+* Average
+* Good
+
+---
+
+**19. What cuisine do you prefer?**
+
+* North Indian
+* South Indian
+* Mixed
+
+---
+
+**20. Are there any foods you dislike or want to avoid?**
+
+* Input: text
+
+---
+
+**21. Are you open to meal prepping?**
+
+* Yes
+* No
+
+---
+
+#  FINAL QUESTION
+
+**22. Anything else you'd like us to consider?**
+
+* Input: text
