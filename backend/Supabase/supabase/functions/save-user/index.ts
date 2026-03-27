@@ -68,10 +68,12 @@ Deno.serve(async (req) => {
   if (upsertErr) return json(500, { error: upsertErr.message });
 
   if (body.type === "plan") {
-    const { error: planErr } = await supabase.from("meal_plans").insert({
+    // Keep only ONE row per phone (latest overwrites previous).
+    const { error: planErr } = await supabase.from("meal_plans").upsert({
       phone,
       meal_plan: body.meal_plan,
-    });
+      created_at: new Date().toISOString(),
+    }, { onConflict: "phone" });
     if (planErr) return json(500, { error: planErr.message });
   } else if (body.type !== "details") {
     return json(400, { error: "Body.type must be 'details' or 'plan'" });

@@ -404,3 +404,15 @@ verify_jwt = false
 
 [functions.get-details]
 verify_jwt = false
+
+[functions.auth-upsert]
+verify_jwt = false
+
+[functions.password-signup]
+verify_jwt = false
+
+[functions.password-login]
+verify_jwt = false
+
+[functions.save-call]
+verify_jwt = false
